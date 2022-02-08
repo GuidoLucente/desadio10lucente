@@ -1,0 +1,127 @@
+@font-face {
+    font-family:"Roboto-LightItalic", sans-serif ;
+    src: url(../tipografia/Roboto-LightItalic.ttf);
+}
+
+body{
+    font-family:"Roboto-LightItalic", sans-serif
+    
+}
+
+#centro{ text-align: center ;
+
+}
+    
+/*TAMAÑO - FUENTE*/
+h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+h2{
+    font-size: 35px; 
+}
+
+/*COLORES - FONDO*/
+h1{
+    background-color: bisque;
+}
+body{
+    background-color: ghostwhite;
+    height: 100vh;
+    background-image: radial-gradient(bisque, grey);
+}
+
+footer{
+    background-color: bisque;
+}
+
+section{
+    font-size: 30px
+}
+h3{
+    font-size: 20px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTRUCTURA */
+#gridArea{
+    display: grid;
+    
+    grid-template-areas: 
+    "header header header"
+    "nav body aside"
+    "footer footer footer"
+    ;
+/* DIMENSIONES */
+    grid-template-columns: 20% auto 30% ;
+    
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#proDuctos{
+    grid-area: body
+}
+
+#lateRal{
+    grid-area: servicios;
+}
+nav{
+    grid-area: nav;
+}
+
+aside{
+    grid-area: aside;
+}
+
+/* RESPONSIVE */
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    h1{ 
+        font-size: 2rem;
+        background-color: orange;
+    }
+
+    body {
+         height: 100vh;
+         font-size: 2rem;
+        }
+    
+    footer{
+        font-size: 1rem;
+       }
+    h3{
+        font-size: 1rem;
+       }
+    }
+
+/* SMARTPHONE */
+@media  screen and (max-width: 480px) {
+
+    body{
+        height: 100vh;
+        font-size: 1rem;
+       }
+    h3 {
+        font-size: 1rem;
+       }
+    /* Me toma las etiquetas, pero no realiza los cambios. No encontre la solución*/
+}
+
+#center{
+       text-align: center;
+}
+
